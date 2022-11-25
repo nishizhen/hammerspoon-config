@@ -2,6 +2,7 @@
  
  It provides some functionality like desktop widgets, window management, bing wallpaper ... etc.
 
+Use some spoon from [https://www.hammerspoon.org/Spoons/index.html](https://www.hammerspoon.org/Spoons/index.html)
 ## Get started
 
 1. Install [Hammerspoon](http://www.hammerspoon.org/) first.
