@@ -14,3 +14,13 @@ Use some spoon from [https://www.hammerspoon.org/Spoons/index.html](https://www.
 ## Keep update
 
 `cd ~/.hammerspoon && git pull`
+
+## Change log
+
+1.  Change BingDaily download UHD image
+2.  Change BingDaily image path from ~/.Trash to ./Pictures/BingDaily
+3.  Change HCalendar location
+
+## Thanks
+
+1. ashfinal 

@@ -17,14 +17,13 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 --- BingDaily.uhd_resolution
 --- Variable
 --- If `true`, download image in UHD resolution instead of HD. Defaults to `false`.
-obj.uhd_resolution = false
+obj.uhd_resolution = true
 
 local function curl_callback(exitCode, stdOut, stdErr)
     if exitCode == 0 then
         obj.task = nil
         obj.last_pic = obj.file_name
-        local localpath = os.getenv("HOME") .. "/.Trash/" .. obj.file_name
-
+        local localpath = os.getenv("HOME") .. "/Pictures/BingDaily/" .. obj.file_name
         -- set wallpaper for all screens
         allScreen = hs.screen.allScreens()
         for _,screen in ipairs(allScreen) do
@@ -36,7 +35,7 @@ local function curl_callback(exitCode, stdOut, stdErr)
 end
 
 local function bingRequest()
-    local user_agent_str = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/603.2.4 (KHTML, like Gecko) Version/10.1.1 Safari/603.2.4"
+    local user_agent_str = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56"
     local json_req_url = "http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1"
     hs.http.asyncGet(json_req_url, {["User-Agent"]=user_agent_str}, function(stat,body,header)
         if stat == 200 then
@@ -60,7 +59,7 @@ local function bingRequest()
                         obj.task:terminate()
                         obj.task = nil
                     end
-                    local localpath = os.getenv("HOME") .. "/.Trash/" .. obj.file_name
+                    local localpath = os.getenv("HOME") .. "/Pictures/BingDaily/" .. obj.file_name
                     obj.task = hs.task.new("/usr/bin/curl", curl_callback, {"-A", user_agent_str, obj.full_url, "-o", localpath})
                     obj.task:start()
                 end

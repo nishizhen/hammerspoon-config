@@ -104,7 +104,7 @@ function obj:createCanvas()
     local cres = cscreen:fullFrame()
     local canvas = hs.canvas.new({
         x = 40,
-        y = cres.h-obj.hcalh-40,
+        y = cres.h-obj.hcalh-80,
         w = obj.hcalw,
         h = obj.hcalh,
     })
