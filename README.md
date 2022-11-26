@@ -20,6 +20,9 @@ Use some spoon from [https://www.hammerspoon.org/Spoons/index.html](https://www.
 1.  Change BingDaily download UHD image
 2.  Change BingDaily image path from ~/.Trash to ./Pictures/BingDaily
 3.  Change HCalendar location
+4.  Change HCalendar title text alpha
+5.  Add BingDaily title and copyright text
+6.  Default close HCalendar
 
 ## Thanks
 

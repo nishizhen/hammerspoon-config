@@ -9,7 +9,7 @@ end
 if not hspoon_list then
     hspoon_list = {
         "BingDaily",
-        "HCalendar",
+        -- "HCalendar",
         -- "WinWin",
         -- "FnMate",
     }

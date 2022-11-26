@@ -8,10 +8,15 @@ local obj={}
 obj.__index = obj
 
 -- Metadata
+-- obj.name = "HCalendar"
+-- obj.version = "1.0"
+-- obj.author = "ashfinal <ashfinal@gmail.com>"
+-- obj.homepage = "https://github.com/Hammerspoon/Spoons"
+-- obj.license = "MIT - https://opensource.org/licenses/MIT"
 obj.name = "HCalendar"
-obj.version = "1.0"
-obj.author = "ashfinal <ashfinal@gmail.com>"
-obj.homepage = "https://github.com/Hammerspoon/Spoons"
+obj.version = "1.1"
+obj.author = "nishizhen <nishizhen@gmail.com>"
+obj.homepage = "https://github.com/nishizhen/hammerspoon-config"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
 
 obj.hcalw = 31*24+20
@@ -97,7 +102,7 @@ function obj:createCanvas()
     end
 
     local hcalbgcolor = {red=0, blue=0, green=0, alpha=0.3}
-    local hcaltitlecolor = {red=1, blue=1, green=1, alpha=0.3}
+    local hcaltitlecolor = {red=1, blue=1, green=1, alpha=0.5}
     local todaycolor = {red=1, blue=1, green=1, alpha=0.2}
     local midlinecolor = {red=1, blue=1, green=1, alpha=0.5}
     local cscreen = hs.screen.mainScreen()
