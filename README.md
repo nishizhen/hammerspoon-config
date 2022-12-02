@@ -23,6 +23,7 @@ Use some spoon from [https://www.hammerspoon.org/Spoons/index.html](https://www.
 4.  Change HCalendar title text alpha
 5.  Add BingDaily title and copyright text
 6.  Default close HCalendar
+7.  Add Auto Start brew bundle backup
 
 ## Thanks
 
